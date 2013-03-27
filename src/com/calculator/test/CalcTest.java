@@ -28,7 +28,7 @@ public class CalcTest extends ActivityInstrumentationTestCase2<Main>{
 		EditText SecondValue = (EditText) solo.getView(R.id.EditText02);
 		solo.enterText(SecondValue, "8");
 		
-		solo.clickOnText("Multiply");
+		solo.clickOnText("gkgkuhlku");
 		
 		//System.out.println("Hello Calculator");
 	}
