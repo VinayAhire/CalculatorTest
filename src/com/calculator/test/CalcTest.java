@@ -1,9 +1,5 @@
 package com.calculator.test;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.EditText;
 
@@ -19,8 +15,7 @@ public class CalcTest extends ActivityInstrumentationTestCase2<Main>{
 	public CalcTest() {
 		super(Main.class);
 	}
-	
-	@Before
+
 	protected void setUp() throws Exception {
 		super.setUp();
 		solo = new Solo(getInstrumentation(), getActivity());
@@ -40,8 +35,8 @@ public class CalcTest extends ActivityInstrumentationTestCase2<Main>{
 
 	}
 	
-	@Test
-	public void A(){
+
+	public void testA(){
 		EditText FirstValue = (EditText) solo.getView(R.id.EditText01);
 		solo.enterText(FirstValue, "5");
 		
@@ -53,7 +48,7 @@ public class CalcTest extends ActivityInstrumentationTestCase2<Main>{
 		//System.out.println("Hello Calculator");
 	}
 	
-	@After
+
 	protected void tearDown() throws Exception {
 		try {
 			solo.finalize();
